@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D337FE20182FC9AA002CAAD9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D337FE1F182FC9AA002CAAD9 /* Foundation.framework */; };
+		D337FE25182FC9AA002CAAD9 /* RussianBlue.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D337FE24182FC9AA002CAAD9 /* RussianBlue.h */; };
+		D337FE27182FC9AA002CAAD9 /* RussianBlue.m in Sources */ = {isa = PBXBuildFile; fileRef = D337FE26182FC9AA002CAAD9 /* RussianBlue.m */; };
+		D337FE2E182FC9AA002CAAD9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D337FE2D182FC9AA002CAAD9 /* XCTest.framework */; };
+		D337FE2F182FC9AA002CAAD9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D337FE1F182FC9AA002CAAD9 /* Foundation.framework */; };
+		D337FE31182FC9AA002CAAD9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D337FE30182FC9AA002CAAD9 /* UIKit.framework */; };
+		D337FE34182FC9AA002CAAD9 /* libRussianBlue.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D337FE1C182FC9AA002CAAD9 /* libRussianBlue.a */; };
+		D337FE3A182FC9AA002CAAD9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D337FE38182FC9AA002CAAD9 /* InfoPlist.strings */; };
+		D337FE3C182FC9AA002CAAD9 /* RussianBlueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D337FE3B182FC9AA002CAAD9 /* RussianBlueTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D337FE32182FC9AA002CAAD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D337FE14182FC9AA002CAAD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D337FE1B182FC9AA002CAAD9;
+			remoteInfo = RussianBlue;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D337FE1A182FC9AA002CAAD9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				D337FE25182FC9AA002CAAD9 /* RussianBlue.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D337FE1C182FC9AA002CAAD9 /* libRussianBlue.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRussianBlue.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D337FE1F182FC9AA002CAAD9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D337FE23182FC9AA002CAAD9 /* RussianBlue-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RussianBlue-Prefix.pch"; sourceTree = "<group>"; };
+		D337FE24182FC9AA002CAAD9 /* RussianBlue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RussianBlue.h; sourceTree = "<group>"; };
+		D337FE26182FC9AA002CAAD9 /* RussianBlue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RussianBlue.m; sourceTree = "<group>"; };
+		D337FE2C182FC9AA002CAAD9 /* RussianBlueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RussianBlueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D337FE2D182FC9AA002CAAD9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D337FE30182FC9AA002CAAD9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D337FE37182FC9AA002CAAD9 /* RussianBlueTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RussianBlueTests-Info.plist"; sourceTree = "<group>"; };
+		D337FE39182FC9AA002CAAD9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D337FE3B182FC9AA002CAAD9 /* RussianBlueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RussianBlueTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D337FE19182FC9AA002CAAD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D337FE20182FC9AA002CAAD9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D337FE29182FC9AA002CAAD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D337FE2E182FC9AA002CAAD9 /* XCTest.framework in Frameworks */,
+				D337FE31182FC9AA002CAAD9 /* UIKit.framework in Frameworks */,
+				D337FE2F182FC9AA002CAAD9 /* Foundation.framework in Frameworks */,
+				D337FE34182FC9AA002CAAD9 /* libRussianBlue.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D337FE13182FC9AA002CAAD9 = {
+			isa = PBXGroup;
+			children = (
+				D337FE21182FC9AA002CAAD9 /* RussianBlue */,
+				D337FE35182FC9AA002CAAD9 /* RussianBlueTests */,
+				D337FE1E182FC9AA002CAAD9 /* Frameworks */,
+				D337FE1D182FC9AA002CAAD9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D337FE1D182FC9AA002CAAD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D337FE1C182FC9AA002CAAD9 /* libRussianBlue.a */,
+				D337FE2C182FC9AA002CAAD9 /* RussianBlueTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D337FE1E182FC9AA002CAAD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D337FE1F182FC9AA002CAAD9 /* Foundation.framework */,
+				D337FE2D182FC9AA002CAAD9 /* XCTest.framework */,
+				D337FE30182FC9AA002CAAD9 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D337FE21182FC9AA002CAAD9 /* RussianBlue */ = {
+			isa = PBXGroup;
+			children = (
+				D337FE24182FC9AA002CAAD9 /* RussianBlue.h */,
+				D337FE26182FC9AA002CAAD9 /* RussianBlue.m */,
+				D337FE22182FC9AA002CAAD9 /* Supporting Files */,
+			);
+			path = RussianBlue;
+			sourceTree = "<group>";
+		};
+		D337FE22182FC9AA002CAAD9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D337FE23182FC9AA002CAAD9 /* RussianBlue-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D337FE35182FC9AA002CAAD9 /* RussianBlueTests */ = {
+			isa = PBXGroup;
+			children = (
+				D337FE3B182FC9AA002CAAD9 /* RussianBlueTests.m */,
+				D337FE36182FC9AA002CAAD9 /* Supporting Files */,
+			);
+			path = RussianBlueTests;
+			sourceTree = "<group>";
+		};
+		D337FE36182FC9AA002CAAD9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D337FE37182FC9AA002CAAD9 /* RussianBlueTests-Info.plist */,
+				D337FE38182FC9AA002CAAD9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D337FE1B182FC9AA002CAAD9 /* RussianBlue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D337FE3F182FC9AA002CAAD9 /* Build configuration list for PBXNativeTarget "RussianBlue" */;
+			buildPhases = (
+				D337FE18182FC9AA002CAAD9 /* Sources */,
+				D337FE19182FC9AA002CAAD9 /* Frameworks */,
+				D337FE1A182FC9AA002CAAD9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RussianBlue;
+			productName = RussianBlue;
+			productReference = D337FE1C182FC9AA002CAAD9 /* libRussianBlue.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D337FE2B182FC9AA002CAAD9 /* RussianBlueTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D337FE42182FC9AA002CAAD9 /* Build configuration list for PBXNativeTarget "RussianBlueTests" */;
+			buildPhases = (
+				D337FE28182FC9AA002CAAD9 /* Sources */,
+				D337FE29182FC9AA002CAAD9 /* Frameworks */,
+				D337FE2A182FC9AA002CAAD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D337FE33182FC9AA002CAAD9 /* PBXTargetDependency */,
+			);
+			name = RussianBlueTests;
+			productName = RussianBlueTests;
+			productReference = D337FE2C182FC9AA002CAAD9 /* RussianBlueTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D337FE14182FC9AA002CAAD9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = cesare;
+			};
+			buildConfigurationList = D337FE17182FC9AA002CAAD9 /* Build configuration list for PBXProject "RussianBlue" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D337FE13182FC9AA002CAAD9;
+			productRefGroup = D337FE1D182FC9AA002CAAD9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D337FE1B182FC9AA002CAAD9 /* RussianBlue */,
+				D337FE2B182FC9AA002CAAD9 /* RussianBlueTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D337FE2A182FC9AA002CAAD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D337FE3A182FC9AA002CAAD9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D337FE18182FC9AA002CAAD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D337FE27182FC9AA002CAAD9 /* RussianBlue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D337FE28182FC9AA002CAAD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D337FE3C182FC9AA002CAAD9 /* RussianBlueTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D337FE33182FC9AA002CAAD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D337FE1B182FC9AA002CAAD9 /* RussianBlue */;
+			targetProxy = D337FE32182FC9AA002CAAD9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D337FE38182FC9AA002CAAD9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D337FE39182FC9AA002CAAD9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D337FE3D182FC9AA002CAAD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D337FE3E182FC9AA002CAAD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D337FE40182FC9AA002CAAD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/RussianBlue.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RussianBlue/RussianBlue-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D337FE41182FC9AA002CAAD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/RussianBlue.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RussianBlue/RussianBlue-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D337FE43182FC9AA002CAAD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RussianBlue/RussianBlue-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RussianBlueTests/RussianBlueTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D337FE44182FC9AA002CAAD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RussianBlue/RussianBlue-Prefix.pch";
+				INFOPLIST_FILE = "RussianBlueTests/RussianBlueTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D337FE17182FC9AA002CAAD9 /* Build configuration list for PBXProject "RussianBlue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D337FE3D182FC9AA002CAAD9 /* Debug */,
+				D337FE3E182FC9AA002CAAD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D337FE3F182FC9AA002CAAD9 /* Build configuration list for PBXNativeTarget "RussianBlue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D337FE40182FC9AA002CAAD9 /* Debug */,
+				D337FE41182FC9AA002CAAD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D337FE42182FC9AA002CAAD9 /* Build configuration list for PBXNativeTarget "RussianBlueTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D337FE43182FC9AA002CAAD9 /* Debug */,
+				D337FE44182FC9AA002CAAD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D337FE14182FC9AA002CAAD9 /* Project object */;
+}
