@@ -16,6 +16,7 @@
 		D337FE34182FC9AA002CAAD9 /* libRussianBlue.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D337FE1C182FC9AA002CAAD9 /* libRussianBlue.a */; };
 		D337FE3A182FC9AA002CAAD9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D337FE38182FC9AA002CAAD9 /* InfoPlist.strings */; };
 		D337FE3C182FC9AA002CAAD9 /* RussianBlueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D337FE3B182FC9AA002CAAD9 /* RussianBlueTests.m */; };
+		D337FE4A182FCBE5002CAAD9 /* Either.m in Sources */ = {isa = PBXBuildFile; fileRef = D337FE49182FCBE5002CAAD9 /* Either.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		D337FE37182FC9AA002CAAD9 /* RussianBlueTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RussianBlueTests-Info.plist"; sourceTree = "<group>"; };
 		D337FE39182FC9AA002CAAD9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D337FE3B182FC9AA002CAAD9 /* RussianBlueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RussianBlueTests.m; sourceTree = "<group>"; };
+		D337FE48182FCBE5002CAAD9 /* Either.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Either.h; sourceTree = "<group>"; };
+		D337FE49182FCBE5002CAAD9 /* Either.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Either.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 		D337FE21182FC9AA002CAAD9 /* RussianBlue */ = {
 			isa = PBXGroup;
 			children = (
+				D337FE48182FCBE5002CAAD9 /* Either.h */,
+				D337FE49182FCBE5002CAAD9 /* Either.m */,
 				D337FE24182FC9AA002CAAD9 /* RussianBlue.h */,
 				D337FE26182FC9AA002CAAD9 /* RussianBlue.m */,
 				D337FE22182FC9AA002CAAD9 /* Supporting Files */,
@@ -224,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D337FE4A182FCBE5002CAAD9 /* Either.m in Sources */,
 				D337FE27182FC9AA002CAAD9 /* RussianBlue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
