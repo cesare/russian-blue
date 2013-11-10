@@ -6,7 +6,23 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		D337FE4D182FD010002CAAD9 /* RussianBlueFramework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D337FE4E182FD010002CAAD9 /* Build configuration list for PBXAggregateTarget "RussianBlueFramework" */;
+			buildPhases = (
+				D302EB46182FD16B00DC4063 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = RussianBlueFramework;
+			productName = RussianBlueFramework;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
+		D302EB48182FD30900DC4063 /* Either.h in Headers */ = {isa = PBXBuildFile; fileRef = D337FE48182FCBE5002CAAD9 /* Either.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D302EB49182FD30900DC4063 /* RussianBlue.h in Headers */ = {isa = PBXBuildFile; fileRef = D337FE24182FC9AA002CAAD9 /* RussianBlue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D337FE20182FC9AA002CAAD9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D337FE1F182FC9AA002CAAD9 /* Foundation.framework */; };
 		D337FE25182FC9AA002CAAD9 /* RussianBlue.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D337FE24182FC9AA002CAAD9 /* RussianBlue.h */; };
 		D337FE27182FC9AA002CAAD9 /* RussianBlue.m in Sources */ = {isa = PBXBuildFile; fileRef = D337FE26182FC9AA002CAAD9 /* RussianBlue.m */; };
@@ -160,6 +176,18 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		D302EB47182FD2F100DC4063 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D302EB48182FD30900DC4063 /* Either.h in Headers */,
+				D302EB49182FD30900DC4063 /* RussianBlue.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		D337FE1B182FC9AA002CAAD9 /* RussianBlue */ = {
 			isa = PBXNativeTarget;
@@ -168,6 +196,7 @@
 				D337FE18182FC9AA002CAAD9 /* Sources */,
 				D337FE19182FC9AA002CAAD9 /* Frameworks */,
 				D337FE1A182FC9AA002CAAD9 /* CopyFiles */,
+				D302EB47182FD2F100DC4063 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -219,6 +248,7 @@
 			targets = (
 				D337FE1B182FC9AA002CAAD9 /* RussianBlue */,
 				D337FE2B182FC9AA002CAAD9 /* RussianBlueTests */,
+				D337FE4D182FD010002CAAD9 /* RussianBlueFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -233,6 +263,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D302EB46182FD16B00DC4063 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Environment Variables\nFRAMEWORK_NAME=${PROJECT_NAME}\nFRAMEWORK_VERSION=A\nFRAMEWORK_VERSION_NUMBER=1.0\nFRAMEWORK_BUILD_PATH=\"${SRCROOT}/build/${CONFIGURATION}-framework\"\nFRAMEWORK_DIR=\"${FRAMEWORK_BUILD_PATH}/${FRAMEWORK_NAME}.framework\"\nFRAMEWORK_PACKAGE_NAME=\"${FRAMEWORK_NAME}.${FRAMEWORK_VERSION_NUMBER}.zip\"\n\n# Clean directories\nrm -rf \"${FRAMEWORK_BUILD_PATH}\"\n\n# Build simulator and device binaries.\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphonesimulator${IPHONEOS_DEPLOYMENT_TARGET} -target \"${PROJECT_NAME}\" -configuration ${CONFIGURATION} clean build\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphoneos${IPHONEOS_DEPLOYMENT_TARGET} -target \"${PROJECT_NAME}\" -configuration ${CONFIGURATION} clean build\n\n# create framework directories.\nmkdir -p ${FRAMEWORK_DIR}\nmkdir -p ${FRAMEWORK_DIR}/Versions\nmkdir -p ${FRAMEWORK_DIR}/Versions/${FRAMEWORK_VERSION}\nmkdir -p ${FRAMEWORK_DIR}/Versions/${FRAMEWORK_VERSION}/Resources\nmkdir -p ${FRAMEWORK_DIR}/Versions/${FRAMEWORK_VERSION}/Headers\n\n# create symlinks\ncd ${FRAMEWORK_DIR}/Versions\nln -s ${FRAMEWORK_VERSION} Current\ncd ..\nln -s Versions/Current/Headers Headers\nln -s Versions/Current/Resources Resources\nln -s Versions/Current/${FRAMEWORK_NAME} ${FRAMEWORK_NAME}\ncd ${SRCROOT}\n\n# create the universal library\nlipo ${SRCROOT}/build/${CONFIGURATION}-iphoneos/lib${FRAMEWORK_NAME}.a ${SRCROOT}/build/${CONFIGURATION}-iphonesimulator/lib${FRAMEWORK_NAME}.a -create -output \"${FRAMEWORK_DIR}/Versions/Current/${FRAMEWORK_NAME}\"\n\n# copy files\ncp ${SRCROOT}/build/${CONFIGURATION}-iphoneos/Headers/*.h ${FRAMEWORK_DIR}/Headers/\ncp ${SRCROOT}/${PROJECT_NAME}/Resources/Info.plist ${FRAMEWORK_DIR}/Resources\n\ncd ${FRAMEWORK_BUILD_PATH}\nzip -ry ${FRAMEWORK_PACKAGE_NAME} $(basename $FRAMEWORK_DIR)\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D337FE18182FC9AA002CAAD9 /* Sources */ = {
@@ -309,6 +355,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
 			};
 			name = Debug;
 		};
@@ -341,6 +388,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
 			};
 			name = Release;
 		};
@@ -410,6 +458,20 @@
 			};
 			name = Release;
 		};
+		D337FE4F182FD010002CAAD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D337FE50182FD010002CAAD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -429,6 +491,7 @@
 				D337FE41182FC9AA002CAAD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D337FE42182FC9AA002CAAD9 /* Build configuration list for PBXNativeTarget "RussianBlueTests" */ = {
 			isa = XCConfigurationList;
@@ -437,6 +500,16 @@
 				D337FE44182FC9AA002CAAD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D337FE4E182FD010002CAAD9 /* Build configuration list for PBXAggregateTarget "RussianBlueFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D337FE4F182FD010002CAAD9 /* Debug */,
+				D337FE50182FD010002CAAD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
