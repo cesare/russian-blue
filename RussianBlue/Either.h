@@ -12,14 +12,14 @@
 - (BOOL)left;
 - (BOOL)right;
 - (id)value;
-- (NSError*)error;
+- (NSException*)exception;
 @end
 
 @interface Left : Either {
-    NSError* error;
+    NSException* exception;
 }
 
-+ (Left*)left:(NSError*)error;
++ (Left*)left:(NSException*)exception;
 @end
 
 @interface Right : Either {

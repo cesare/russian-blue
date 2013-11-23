@@ -22,7 +22,7 @@
     return nil;
 }
 
-- (NSError*)error {
+- (NSException*)exception {
     return nil;
 }
 
@@ -30,16 +30,16 @@
 
 @implementation Left
 
-- (id)initWithError:(NSError*)anError {
+- (id)initWithError:(NSException*)anException {
     self = [super init];
     if (self != nil) {
-        error = anError;
+        exception = anException;
     }
     return self;
 }
 
-+ (Left*)left:(NSError *)error {
-    return [[Left alloc] initWithError:error];
++ (Left*)left:(NSException *)exception {
+    return [[Left alloc] initWithError:exception];
 }
 
 - (BOOL)left {
