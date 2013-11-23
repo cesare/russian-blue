@@ -33,6 +33,8 @@
 		D337FE3A182FC9AA002CAAD9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D337FE38182FC9AA002CAAD9 /* InfoPlist.strings */; };
 		D337FE3C182FC9AA002CAAD9 /* RussianBlueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D337FE3B182FC9AA002CAAD9 /* RussianBlueTests.m */; };
 		D337FE4A182FCBE5002CAAD9 /* Either.m in Sources */ = {isa = PBXBuildFile; fileRef = D337FE49182FCBE5002CAAD9 /* Either.m */; };
+		D38C0B5C1839ED0400AB53C2 /* Promise.h in Headers */ = {isa = PBXBuildFile; fileRef = D38C0B5A1839ED0400AB53C2 /* Promise.h */; };
+		D38C0B5D1839ED0400AB53C2 /* Promise.m in Sources */ = {isa = PBXBuildFile; fileRef = D38C0B5B1839ED0400AB53C2 /* Promise.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		D337FE48182FCBE5002CAAD9 /* Either.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Either.h; sourceTree = "<group>"; };
 		D337FE49182FCBE5002CAAD9 /* Either.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Either.m; sourceTree = "<group>"; };
 		D337FE4C182FCF51002CAAD9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D38C0B5A1839ED0400AB53C2 /* Promise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Promise.h; sourceTree = "<group>"; };
+		D38C0B5B1839ED0400AB53C2 /* Promise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Promise.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,8 @@
 			children = (
 				D337FE48182FCBE5002CAAD9 /* Either.h */,
 				D337FE49182FCBE5002CAAD9 /* Either.m */,
+				D38C0B5A1839ED0400AB53C2 /* Promise.h */,
+				D38C0B5B1839ED0400AB53C2 /* Promise.m */,
 				D337FE24182FC9AA002CAAD9 /* RussianBlue.h */,
 				D337FE26182FC9AA002CAAD9 /* RussianBlue.m */,
 				D337FE4B182FCF51002CAAD9 /* Resources */,
@@ -181,6 +187,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D38C0B5C1839ED0400AB53C2 /* Promise.h in Headers */,
 				D302EB48182FD30900DC4063 /* Either.h in Headers */,
 				D302EB49182FD30900DC4063 /* RussianBlue.h in Headers */,
 			);
@@ -285,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D38C0B5D1839ED0400AB53C2 /* Promise.m in Sources */,
 				D337FE4A182FCBE5002CAAD9 /* Either.m in Sources */,
 				D337FE27182FC9AA002CAAD9 /* RussianBlue.m in Sources */,
 			);
