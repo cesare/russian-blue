@@ -1,8 +1,9 @@
 #import <Foundation/Foundation.h>
 #import "Either.h"
+#import "Maybe.h"
 
-typedef id (^PromiseOnFulfilled)(id results);
-typedef id (^PromiseOnRejected)(NSException* exception);
+typedef Maybe* (^PromiseOnFulfilled)(id results);
+typedef Maybe* (^PromiseOnRejected)(NSException* exception);
 
 @interface Promise : NSObject {
     @private

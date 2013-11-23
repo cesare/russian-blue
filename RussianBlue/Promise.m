@@ -167,7 +167,7 @@
     }
 
     @try {
-        id value = f([results value]);
+        Maybe* value = f([results value]);
         [self resolveNextPromise:[callback promise] withValue:value];
     }
     @catch (NSException *exception) {
@@ -182,7 +182,7 @@
     }
 
     @try {
-        id value = f([results value]);
+        Maybe* value = f([results value]);
         [self resolveNextPromise:[callback promise] withValue:value];
     }
     @catch (NSException *exception) {
@@ -190,11 +190,12 @@
     }
 }
 
-- (void)resolveNextPromise:(Promise*)promise withValue:(id)value {
-    if (value == nil) {
+- (void)resolveNextPromise:(Promise*)promise withValue:(Maybe*)maybeValue {
+    if (! [maybeValue exists]) {
         return;
     }
 
+    id value = [maybeValue value];
     if (promise == value) {
         // TODO reject the promise with a kind of TypeError
         return;
@@ -204,10 +205,10 @@
         Promise* valuePromise = (Promise*)value;
         [valuePromise then:^(id v){
             [promise resolve:v];
-            return v;
+            return [Nothing nothing];
         } onRejected:^(NSException* e) {
             [valuePromise reject:e];
-            return e;
+            return [Nothing nothing];
         }];
     }
     else {
