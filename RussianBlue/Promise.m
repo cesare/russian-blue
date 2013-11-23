@@ -166,13 +166,15 @@
         return;
     }
 
-    @try {
-        Maybe* value = f([results value]);
-        [self resolveNextPromise:[callback promise] withValue:value];
-    }
-    @catch (NSException *exception) {
-        [[callback promise] reject:exception];
-    }
+    [self runCallback:^{
+        @try {
+            Maybe* value = f([results value]);
+            [self resolveNextPromise:[callback promise] withValue:value];
+        }
+        @catch (NSException *exception) {
+            [[callback promise] reject:exception];
+        }
+    }];
 }
 
 - (void)executeRejectedCallback:(PromiseCallback*)callback {
@@ -181,14 +183,22 @@
         return;
     }
 
-    @try {
-        Maybe* value = f([results value]);
-        [self resolveNextPromise:[callback promise] withValue:value];
-    }
-    @catch (NSException *exception) {
-        [[callback promise] reject:exception];
-    }
+    [self runCallback:^{
+        @try {
+            Maybe* value = f([results value]);
+            [self resolveNextPromise:[callback promise] withValue:value];
+        }
+        @catch (NSException *exception) {
+            [[callback promise] reject:exception];
+        }
+    }];
 }
+
+- (void)runCallback:(void (^)())block {
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_async(queue, block);
+}
+
 
 - (void)resolveNextPromise:(Promise*)promise withValue:(Maybe*)maybeValue {
     if (! [maybeValue exists]) {
