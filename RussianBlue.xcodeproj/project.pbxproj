@@ -25,7 +25,6 @@
 		D302EB49182FD30900DC4063 /* RussianBlue.h in Headers */ = {isa = PBXBuildFile; fileRef = D337FE24182FC9AA002CAAD9 /* RussianBlue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D337FE20182FC9AA002CAAD9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D337FE1F182FC9AA002CAAD9 /* Foundation.framework */; };
 		D337FE25182FC9AA002CAAD9 /* RussianBlue.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D337FE24182FC9AA002CAAD9 /* RussianBlue.h */; };
-		D337FE27182FC9AA002CAAD9 /* RussianBlue.m in Sources */ = {isa = PBXBuildFile; fileRef = D337FE26182FC9AA002CAAD9 /* RussianBlue.m */; };
 		D337FE2E182FC9AA002CAAD9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D337FE2D182FC9AA002CAAD9 /* XCTest.framework */; };
 		D337FE2F182FC9AA002CAAD9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D337FE1F182FC9AA002CAAD9 /* Foundation.framework */; };
 		D337FE31182FC9AA002CAAD9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D337FE30182FC9AA002CAAD9 /* UIKit.framework */; };
@@ -33,9 +32,9 @@
 		D337FE3A182FC9AA002CAAD9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D337FE38182FC9AA002CAAD9 /* InfoPlist.strings */; };
 		D337FE3C182FC9AA002CAAD9 /* RussianBlueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D337FE3B182FC9AA002CAAD9 /* RussianBlueTests.m */; };
 		D337FE4A182FCBE5002CAAD9 /* Either.m in Sources */ = {isa = PBXBuildFile; fileRef = D337FE49182FCBE5002CAAD9 /* Either.m */; };
-		D38C0B5C1839ED0400AB53C2 /* Promise.h in Headers */ = {isa = PBXBuildFile; fileRef = D38C0B5A1839ED0400AB53C2 /* Promise.h */; };
+		D38C0B5C1839ED0400AB53C2 /* Promise.h in Headers */ = {isa = PBXBuildFile; fileRef = D38C0B5A1839ED0400AB53C2 /* Promise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D38C0B5D1839ED0400AB53C2 /* Promise.m in Sources */ = {isa = PBXBuildFile; fileRef = D38C0B5B1839ED0400AB53C2 /* Promise.m */; };
-		D3A8829D1840F0CE00BE0C76 /* Maybe.h in Headers */ = {isa = PBXBuildFile; fileRef = D3A8829B1840F0CE00BE0C76 /* Maybe.h */; };
+		D3A8829D1840F0CE00BE0C76 /* Maybe.h in Headers */ = {isa = PBXBuildFile; fileRef = D3A8829B1840F0CE00BE0C76 /* Maybe.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3A8829E1840F0CE00BE0C76 /* Maybe.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A8829C1840F0CE00BE0C76 /* Maybe.m */; };
 /* End PBXBuildFile section */
 
@@ -67,7 +66,6 @@
 		D337FE1F182FC9AA002CAAD9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D337FE23182FC9AA002CAAD9 /* RussianBlue-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RussianBlue-Prefix.pch"; sourceTree = "<group>"; };
 		D337FE24182FC9AA002CAAD9 /* RussianBlue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RussianBlue.h; sourceTree = "<group>"; };
-		D337FE26182FC9AA002CAAD9 /* RussianBlue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RussianBlue.m; sourceTree = "<group>"; };
 		D337FE2C182FC9AA002CAAD9 /* RussianBlueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RussianBlueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D337FE2D182FC9AA002CAAD9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D337FE30182FC9AA002CAAD9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -145,7 +143,6 @@
 				D38C0B5A1839ED0400AB53C2 /* Promise.h */,
 				D38C0B5B1839ED0400AB53C2 /* Promise.m */,
 				D337FE24182FC9AA002CAAD9 /* RussianBlue.h */,
-				D337FE26182FC9AA002CAAD9 /* RussianBlue.m */,
 				D337FE4B182FCF51002CAAD9 /* Resources */,
 				D337FE22182FC9AA002CAAD9 /* Supporting Files */,
 			);
@@ -195,8 +192,8 @@
 			files = (
 				D38C0B5C1839ED0400AB53C2 /* Promise.h in Headers */,
 				D302EB48182FD30900DC4063 /* Either.h in Headers */,
-				D302EB49182FD30900DC4063 /* RussianBlue.h in Headers */,
 				D3A8829D1840F0CE00BE0C76 /* Maybe.h in Headers */,
+				D302EB49182FD30900DC4063 /* RussianBlue.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,7 +299,6 @@
 				D3A8829E1840F0CE00BE0C76 /* Maybe.m in Sources */,
 				D38C0B5D1839ED0400AB53C2 /* Promise.m in Sources */,
 				D337FE4A182FCBE5002CAAD9 /* Either.m in Sources */,
-				D337FE27182FC9AA002CAAD9 /* RussianBlue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

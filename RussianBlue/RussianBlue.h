@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface RussianBlue : NSObject
-
-@end
+#import <RussianBlue/Either.h>
+#import <RussianBlue/Maybe.h>
+#import <RussianBlue/Promise.h>
