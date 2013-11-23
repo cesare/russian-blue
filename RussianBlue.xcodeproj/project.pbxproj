@@ -35,6 +35,8 @@
 		D337FE4A182FCBE5002CAAD9 /* Either.m in Sources */ = {isa = PBXBuildFile; fileRef = D337FE49182FCBE5002CAAD9 /* Either.m */; };
 		D38C0B5C1839ED0400AB53C2 /* Promise.h in Headers */ = {isa = PBXBuildFile; fileRef = D38C0B5A1839ED0400AB53C2 /* Promise.h */; };
 		D38C0B5D1839ED0400AB53C2 /* Promise.m in Sources */ = {isa = PBXBuildFile; fileRef = D38C0B5B1839ED0400AB53C2 /* Promise.m */; };
+		D3A8829D1840F0CE00BE0C76 /* Maybe.h in Headers */ = {isa = PBXBuildFile; fileRef = D3A8829B1840F0CE00BE0C76 /* Maybe.h */; };
+		D3A8829E1840F0CE00BE0C76 /* Maybe.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A8829C1840F0CE00BE0C76 /* Maybe.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		D337FE4C182FCF51002CAAD9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D38C0B5A1839ED0400AB53C2 /* Promise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Promise.h; sourceTree = "<group>"; };
 		D38C0B5B1839ED0400AB53C2 /* Promise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Promise.m; sourceTree = "<group>"; };
+		D3A8829B1840F0CE00BE0C76 /* Maybe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Maybe.h; sourceTree = "<group>"; };
+		D3A8829C1840F0CE00BE0C76 /* Maybe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Maybe.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +140,8 @@
 			children = (
 				D337FE48182FCBE5002CAAD9 /* Either.h */,
 				D337FE49182FCBE5002CAAD9 /* Either.m */,
+				D3A8829B1840F0CE00BE0C76 /* Maybe.h */,
+				D3A8829C1840F0CE00BE0C76 /* Maybe.m */,
 				D38C0B5A1839ED0400AB53C2 /* Promise.h */,
 				D38C0B5B1839ED0400AB53C2 /* Promise.m */,
 				D337FE24182FC9AA002CAAD9 /* RussianBlue.h */,
@@ -190,6 +196,7 @@
 				D38C0B5C1839ED0400AB53C2 /* Promise.h in Headers */,
 				D302EB48182FD30900DC4063 /* Either.h in Headers */,
 				D302EB49182FD30900DC4063 /* RussianBlue.h in Headers */,
+				D3A8829D1840F0CE00BE0C76 /* Maybe.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3A8829E1840F0CE00BE0C76 /* Maybe.m in Sources */,
 				D38C0B5D1839ED0400AB53C2 /* Promise.m in Sources */,
 				D337FE4A182FCBE5002CAAD9 /* Either.m in Sources */,
 				D337FE27182FC9AA002CAAD9 /* RussianBlue.m in Sources */,
