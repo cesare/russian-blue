@@ -218,7 +218,7 @@
             [promise resolve:v];
             return [Nothing nothing];
         } onRejected:^(NSException* e) {
-            [valuePromise reject:e];
+            [promise reject:e];
             return [Nothing nothing];
         }];
     }
