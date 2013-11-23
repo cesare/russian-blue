@@ -207,7 +207,8 @@
 
     id value = [maybeValue value];
     if (promise == value) {
-        // TODO reject the promise with a kind of TypeError
+        NSException* e = [NSException exceptionWithName:@"TypeError" reason:@"value is identical to promise" userInfo:nil];
+        [promise reject:e];
         return;
     }
 
